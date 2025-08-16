@@ -1,5 +1,7 @@
 import { GraduationCap, Code, Shield, Brain } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import profilePhoto from '@/assets/kanupriya-profile.jpg';
 
 const About = () => {
   const interests = [
@@ -33,6 +35,14 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Profile Photo */}
+          <div className="flex justify-center lg:justify-end animate-fade-in">
+            <Avatar className="w-64 h-64 shadow-glow">
+              <AvatarImage src={profilePhoto} alt="Kanupriya Tiwari" className="object-cover" />
+              <AvatarFallback className="text-4xl">KT</AvatarFallback>
+            </Avatar>
+          </div>
+
           {/* Education & Bio */}
           <div className="space-y-8 animate-slide-in">
             <Card className="p-6 bg-gradient-card border-border/50 shadow-card">
