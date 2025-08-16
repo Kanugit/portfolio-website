@@ -6,28 +6,28 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      title: "Decentralized eVault",
-      description: "A blockchain-based secure eVault system with Aadhaar verification, IPFS integration for decentralized storage, built with React and Django. Features smart contract integration for enhanced security.",
+      title: "Decentralized eVault (SIH Project)",
+      description: "Secure digital vault system built with React, Django, and MongoDB, improving efficiency in document management. Winner of Smart India Hackathon 2023 with focus on user security and data integrity.",
       icon: Shield,
-      technologies: ["React", "Django", "Blockchain", "IPFS", "Smart Contracts"],
+      technologies: ["React", "Django", "MongoDB", "Authentication", "Security"],
       github: "https://github.com",
       demo: "https://demo.com",
       featured: true
     },
     {
-      title: "Certificate Generation & Validation",
-      description: "A blockchain DApp for secure certificate verification and generation. Ensures authenticity and prevents fraud through smart contract validation.",
+      title: "Certificate Verification System",
+      description: "Web application for certificate validation, showcasing skills in secure application design and user authentication systems. Built with modern web technologies for reliable verification.",
       icon: Award,
-      technologies: ["Blockchain", "Smart Contracts", "Web3", "React"],
+      technologies: ["React", "Node.js", "Security", "Authentication", "Database"],
       github: "https://github.com",
       demo: "https://demo.com",
       featured: true
     },
     {
       title: "Anti-Assignment Piracy System",
-      description: "Django and Python-based system to detect plagiarism in assignments using advanced algorithms and machine learning techniques.",
+      description: "Django + Python project to detect plagiarism in assignments, highlighting data analysis and automation capabilities. Uses advanced algorithms for content comparison and similarity detection.",
       icon: Search,
-      technologies: ["Django", "Python", "Machine Learning", "NLP"],
+      technologies: ["Django", "Python", "Data Analysis", "Automation", "Algorithms"],
       github: "https://github.com",
       demo: "https://demo.com",
       featured: false
@@ -42,7 +42,7 @@ const Projects = () => {
             Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of my technical expertise and innovative solutions across web and blockchain development
+            A showcase of my technical expertise in web development, data analytics, and innovative problem-solving solutions
           </p>
         </div>
 

@@ -39,13 +39,13 @@ const Hero = () => {
                 </span>
               </h1>
               <h2 className="text-xl lg:text-2xl text-muted-foreground font-medium">
-                Software Developer | React.js Enthusiast
+                Software Developer | React.js Enthusiast | Data Analytics & Modern AI Learner
               </h2>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Building impactful solutions with modern web and blockchain technologies.
-              Passionate about creating user-friendly applications and solving complex problems.
+              Building impactful solutions with modern web technologies, data analytics, and AI.
+              Passionate about creating user-friendly applications and exploring innovative technologies.
             </p>
 
             <div className="flex flex-wrap gap-4">

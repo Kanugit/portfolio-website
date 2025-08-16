@@ -1,24 +1,22 @@
 import { GraduationCap, Code, Shield, Brain } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import profilePhoto from '@/assets/kanupriya-profile.jpg';
 
 const About = () => {
   const interests = [
     {
       icon: Code,
-      title: "Frontend Development",
-      description: "Creating responsive and interactive web applications"
+      title: "Web Development",
+      description: "Creating responsive and interactive web applications with modern frameworks"
     },
     {
       icon: Shield,
-      title: "Blockchain Technology",
-      description: "Building decentralized solutions and smart contracts"
+      title: "Data Analytics",
+      description: "Analyzing data for meaningful insights and data-driven decision making"
     },
     {
       icon: Brain,
-      title: "Problem Solving",
-      description: "Analyzing complex problems and developing efficient solutions"
+      title: "Modern AI",
+      description: "Exploring AI technologies and integrating them into practical solutions"
     }
   ];
 
@@ -30,19 +28,11 @@ const About = () => {
             About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate software developer and final year B.Tech CSE student with a strong foundation in modern web technologies and blockchain development.
+            I am a Computer Science graduate passionate about creating user-friendly web applications, analyzing data for meaningful insights, and exploring modern AI technologies.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Photo */}
-          <div className="flex justify-center lg:justify-end animate-fade-in">
-            <Avatar className="w-64 h-64 shadow-glow">
-              <AvatarImage src={profilePhoto} alt="Kanupriya Tiwari" className="object-cover" />
-              <AvatarFallback className="text-4xl">KT</AvatarFallback>
-            </Avatar>
-          </div>
-
           {/* Education & Bio */}
           <div className="space-y-8 animate-slide-in">
             <Card className="p-6 bg-gradient-card border-border/50 shadow-card">
@@ -58,7 +48,7 @@ const About = () => {
               <div className="space-y-3">
                 <div>
                   <h4 className="font-semibold">B.Tech Computer Science & Engineering</h4>
-                  <p className="text-muted-foreground">ITM University, Gwalior</p>
+                  <p className="text-muted-foreground">ITM University, Gwalior (Graduate)</p>
                   <p className="text-sm text-primary font-medium">CGPA: 8.59</p>
                 </div>
               </div>
@@ -67,10 +57,10 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
-                As a final year B.Tech CSE student at ITM University Gwalior, I've been passionate about technology and innovation. My journey in software development has led me to specialize in frontend technologies, particularly React.js, while also exploring the fascinating world of blockchain technology.
+                As a Computer Science graduate from ITM University Gwalior, I am passionate about creating user-friendly web applications, analyzing data for meaningful insights, and exploring modern AI technologies. I enjoy solving problems, learning continuously, and applying my skills to build innovative solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I believe in continuous learning and have participated in various hackathons and competitions, winning several awards for innovative solutions. My goal is to create technology that makes a positive impact on people's lives.
+                My journey includes participation in various hackathons and competitions, winning several awards for innovative solutions. I believe in the power of technology to make a positive impact on people's lives through thoughtful design and implementation.
               </p>
             </div>
           </div>

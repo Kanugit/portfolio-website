@@ -11,20 +11,20 @@ const Skills = () => {
     },
     {
       icon: Monitor,
-      title: "Frameworks",
-      skills: ["React.js", "Next.js", "Vite", "CSS"],
+      title: "Frameworks/Tools",
+      skills: ["ReactJS", "Next.js", "Vite", "CSS", "Git"],
       color: "text-green-400"
     },
     {
-      icon: Wrench,
-      title: "Tools",
-      skills: ["Git", "VS Code", "GitHub"],
+      icon: Database,
+      title: "Data & Analytics",
+      skills: ["Data Analytics", "SQL", "Python Libraries"],
       color: "text-purple-400"
     },
     {
-      icon: Database,
-      title: "Other Technologies",
-      skills: ["Django", "IPFS", "Blockchain", "Smart Contracts"],
+      icon: Wrench,
+      title: "Modern Technologies",
+      skills: ["AI Fundamentals", "Cloud Computing", "API Integration"],
       color: "text-orange-400"
     }
   ];
@@ -37,7 +37,7 @@ const Skills = () => {
             Technical <span className="bg-gradient-primary bg-clip-text text-transparent">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive set of technologies and tools I use to bring ideas to life
+            A comprehensive set of technologies and tools for web development, data analytics, and modern AI applications
           </p>
         </div>
 
