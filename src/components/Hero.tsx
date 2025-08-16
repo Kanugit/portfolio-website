@@ -53,8 +53,12 @@ const Hero = () => {
                 size="lg"
                 className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
+                <a
+                  href="/Resume_Kanupriya.pdf"
+                  download
+                  className="flex items-center justify-center gap-2">
+                <Download className="mr-2 h-5 w-5" />Download Resume
+               </a>
               </Button>
               <Button 
                 variant="outline" 

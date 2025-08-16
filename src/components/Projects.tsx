@@ -21,7 +21,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "Security", "Authentication", "Database"],
       github: "https://github.com",
       demo: "https://demo.com",
-      featured: true
+      featured: false
     },
     {
       title: "Anti-Assignment Piracy System",
@@ -37,6 +37,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
@@ -46,20 +47,19 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Projects Grid - Right Aligned */}
-        <div className="grid lg:grid-cols-3 gap-8 justify-items-end">
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
+            <Card
               key={project.title}
-              className={`group relative overflow-hidden bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-500 ${
-                project.featured ? 'lg:col-span-2 lg:row-span-2' : ''
-              }`}
+              className={`group relative overflow-hidden bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-500 
+                ${project.featured ? 'lg:grid-cols-3' : ''}`}
               style={{
                 animationDelay: `${index * 0.1}s`
               }}
             >
               <div className="p-8 h-full flex flex-col">
-                {/* Project Icon and Badge */}
+                {/* Project Icon + Badge */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="p-4 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-300">
                     <project.icon className="h-8 w-8 text-primary" />
@@ -71,17 +71,16 @@ const Projects = () => {
                   )}
                 </div>
 
-                {/* Project Content */}
+                {/* Content */}
                 <div className="flex-1 space-y-4">
                   <h3 className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">
                     {project.title}
                   </h3>
-                  
                   <p className="text-muted-foreground leading-relaxed">
                     {project.description}
                   </p>
 
-                  {/* Technologies */}
+                  {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge 
@@ -95,7 +94,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Project Links */}
+                {/* Links */}
                 <div className="flex gap-4 mt-6 pt-6 border-t border-border/50">
                   <Button
                     variant="outline"
@@ -120,7 +119,7 @@ const Projects = () => {
                   </Button>
                 </div>
 
-                {/* Hover Effect Overlay */}
+                {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
               </div>
             </Card>
