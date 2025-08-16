@@ -46,7 +46,8 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        {/* Projects Grid - Right Aligned */}
+        <div className="grid lg:grid-cols-3 gap-8 justify-items-end">
           {projects.map((project, index) => (
             <Card 
               key={project.title}
