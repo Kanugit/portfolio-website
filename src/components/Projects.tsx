@@ -1,0 +1,151 @@
+import { ExternalLink, Github, Shield, Award, Search } from 'lucide-react';
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Decentralized eVault",
+      description: "A blockchain-based secure eVault system with Aadhaar verification, IPFS integration for decentralized storage, built with React and Django. Features smart contract integration for enhanced security.",
+      icon: Shield,
+      technologies: ["React", "Django", "Blockchain", "IPFS", "Smart Contracts"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      featured: true
+    },
+    {
+      title: "Certificate Generation & Validation",
+      description: "A blockchain DApp for secure certificate verification and generation. Ensures authenticity and prevents fraud through smart contract validation.",
+      icon: Award,
+      technologies: ["Blockchain", "Smart Contracts", "Web3", "React"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      featured: true
+    },
+    {
+      title: "Anti-Assignment Piracy System",
+      description: "Django and Python-based system to detect plagiarism in assignments using advanced algorithms and machine learning techniques.",
+      icon: Search,
+      technologies: ["Django", "Python", "Machine Learning", "NLP"],
+      github: "https://github.com",
+      demo: "https://demo.com",
+      featured: false
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            A showcase of my technical expertise and innovative solutions across web and blockchain development
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card 
+              key={project.title}
+              className={`group relative overflow-hidden bg-gradient-card border-border/50 shadow-card hover:shadow-glow transition-all duration-500 ${
+                project.featured ? 'lg:col-span-2 lg:row-span-2' : ''
+              }`}
+              style={{
+                animationDelay: `${index * 0.1}s`
+              }}
+            >
+              <div className="p-8 h-full flex flex-col">
+                {/* Project Icon and Badge */}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="p-4 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-300">
+                    <project.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  {project.featured && (
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      Featured
+                    </Badge>
+                  )}
+                </div>
+
+                {/* Project Content */}
+                <div className="flex-1 space-y-4">
+                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Technologies */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge 
+                        key={tech}
+                        variant="outline"
+                        className="bg-muted/20 border-primary/20 text-sm"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Project Links */}
+                <div className="flex gap-4 mt-6 pt-6 border-t border-border/50">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    asChild
+                  >
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </a>
+                  </Button>
+                  <Button
+                    size="sm"
+                    className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
+                    asChild
+                  >
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Demo
+                    </a>
+                  </Button>
+                </div>
+
+                {/* Hover Effect Overlay */}
+                <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6">
+            Want to see more of my work?
+          </p>
+          <Button 
+            variant="outline"
+            size="lg"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            asChild
+          >
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Github className="h-5 w-5 mr-2" />
+              View All Projects on GitHub
+            </a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
