@@ -1,6 +1,6 @@
 import { Download, Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePhoto from '@/assets/kanupriya-profile.jpg';
+import profilePhoto from '@/assets/iam-whitebg.png';
 
 const Hero = () => {
   const scrollToContact = () => {
