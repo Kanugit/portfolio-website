@@ -1,6 +1,6 @@
 import { Download, Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/kanupriya-profile.jpg';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -11,8 +11,24 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-6 lg:px-8 pt-16">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Profile Image - Mobile Order */}
+          <div className="flex justify-center lg:justify-end animate-fade-in order-first lg:order-last">
+            <div className="relative group">
+              <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow bg-gradient-to-br from-primary/20 to-transparent p-1">
+                <div className="w-full h-full rounded-full overflow-hidden bg-background/20 backdrop-blur-sm">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Kanupriya Tiwari" 
+                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                  />
+                </div>
+              </div>
+              <div className="absolute -inset-6 bg-gradient-primary rounded-full opacity-10 blur-xl group-hover:opacity-20 transition-opacity duration-300"></div>
+            </div>
+          </div>
+
           {/* Content */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8 animate-fade-in order-last lg:order-first">
             <div className="space-y-4">
               <p className="text-primary text-lg font-medium">Hello, I'm</p>
               <h1 className="text-5xl lg:text-6xl font-bold">
@@ -68,20 +84,6 @@ const Hero = () => {
               >
                 <Github className="h-6 w-6" />
               </a>
-            </div>
-          </div>
-
-          {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end animate-fade-in">
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-card">
-                <img 
-                  src={profilePhoto} 
-                  alt="Kanupriya Tiwari" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -inset-4 bg-gradient-primary rounded-full opacity-20 animate-glow"></div>
             </div>
           </div>
         </div>
