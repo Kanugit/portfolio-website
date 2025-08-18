@@ -61,6 +61,12 @@ const Achievements = () => {
       title: "Problem Solving (Basic)",
       issuer: "HackerRank",
       description: "Fundamental problem-solving techniques"
+    },
+    {
+      title: "AWS Academy Graduate - Cloud Foundations",
+      issuer: "Amazon Web Services",
+      description: "Comprehensive understanding of cloud computing concepts and AWS services.",
+      link: "#"
     }
   ];
 

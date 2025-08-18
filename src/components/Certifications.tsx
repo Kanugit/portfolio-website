@@ -78,6 +78,7 @@ const Certifications = () => {
           ))}
         </div>
       </div>
+      
     </section>
   );
 };
