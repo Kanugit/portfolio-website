@@ -10,7 +10,7 @@ const Projects = () => {
       description: "Secure digital vault system built with React, Django, and MongoDB, improving efficiency in document management. Winner of Smart India Hackathon 2023 with focus on user security and data integrity.",
       icon: Shield,
       technologies: ["React", "Django", "MongoDB", "Authentication", "Security"],
-      github: "",
+      github: "https://github.com/Pranshu12354/Decentralized-Evault/tree/main/Evault-master",
       demo: "https://demo.com",
       featured: true
     },
