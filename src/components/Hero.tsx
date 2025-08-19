@@ -73,7 +73,7 @@ const Hero = () => {
 
             <div className="flex space-x-6">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/kanupriya-tiwari-813a22240/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -81,7 +81,7 @@ const Hero = () => {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/Kanugit" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200"

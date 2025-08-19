@@ -10,7 +10,7 @@ const Projects = () => {
       description: "Secure digital vault system built with React, Django, and MongoDB, improving efficiency in document management. Winner of Smart India Hackathon 2023 with focus on user security and data integrity.",
       icon: Shield,
       technologies: ["React", "Django", "MongoDB", "Authentication", "Security"],
-      github: "https://github.com",
+      github: "",
       demo: "https://demo.com",
       featured: true
     },
@@ -19,7 +19,7 @@ const Projects = () => {
       description: "Web application for certificate validation, showcasing skills in secure application design and user authentication systems. Built with modern web technologies for reliable verification.",
       icon: Award,
       technologies: ["React", "Node.js", "Security", "Authentication", "Database"],
-      github: "https://github.com",
+      github: "https://github.com/Kanugit/Blockchain-Certificate-Generation-and-Validation-System",
       demo: "https://demo.com",
       featured: false
     },
@@ -28,7 +28,7 @@ const Projects = () => {
       description: "Django + Python project to detect plagiarism in assignments, highlighting data analysis and automation capabilities. Uses advanced algorithms for content comparison and similarity detection.",
       icon: Search,
       technologies: ["Django", "Python", "Data Analysis", "Automation", "Algorithms"],
-      github: "https://github.com",
+      github: "https://github.com/Kanugit/AntiAssignment-Piracy-System-/tree/main/mproject/antiassignment",
       demo: "https://demo.com",
       featured: false
     }
@@ -120,7 +120,8 @@ const Projects = () => {
                 </div>
 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none" />
+
               </div>
             </Card>
           ))}
@@ -137,7 +138,7 @@ const Projects = () => {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             asChild
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Kanugit" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2" />
               View All Projects on GitHub
             </a>

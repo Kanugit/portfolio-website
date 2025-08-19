@@ -10,12 +10,7 @@ const Contact = () => {
       value: "kanupriyatiwari51@gmail.com",
       href: "mailto:kanupriyatiwari51@gmail.com"
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 6269384660",
-      href: "tel:+916269384660"
-    },
+    
     {
       icon: MapPin,
       label: "Location",
@@ -28,25 +23,25 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/Kanugit",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/kanupriya-tiwari-813a22240/",
       color: "hover:text-blue-400"
     },
     {
       icon: Code,
       label: "CodeChef",
-      href: "https://codechef.com",
+      href: "https://www.codechef.com/users/kanupriyatiwar",
       color: "hover:text-yellow-400"
     },
     {
       icon: Trophy,
       label: "HackerRank",
-      href: "https://hackerrank.com",
+      href: "https://www.hackerrank.com/profile/kanupriyatiwari1",
       color: "hover:text-green-400"
     }
   ];
@@ -154,7 +149,7 @@ const Contact = () => {
                     </a>
                   </Button>
                   
-                  <Button 
+                  {/* <Button 
                     variant="outline"
                     size="lg"
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full"
@@ -164,7 +159,7 @@ const Contact = () => {
                       <Phone className="mr-2 h-5 w-5" />
                       Give me a call
                     </a>
-                  </Button>
+                  </Button> */}
                 </div>
 
                 <div className="mt-8 p-4 bg-muted/20 rounded-lg border border-primary/20">

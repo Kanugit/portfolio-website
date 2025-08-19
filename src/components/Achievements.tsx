@@ -50,23 +50,26 @@ const Achievements = () => {
     {
       title: "CAD - ServiceNow",
       issuer: "ServiceNow",
-      description: "Certified Application Developer"
+      description: "Certified Application Developer",
+      link:""
     },
     {
       title: "Python (3 Stars)",
       issuer: "HackerRank",
-      description: "Advanced Python programming skills"
+      description: "Advanced Python programming skills",
+      link:""
     },
     {
       title: "Problem Solving (Basic)",
       issuer: "HackerRank",
-      description: "Fundamental problem-solving techniques"
+      description: "Fundamental problem-solving techniques",
+      link:""
     },
     {
       title: "AWS Academy Graduate - Cloud Foundations",
       issuer: "Amazon Web Services",
       description: "Comprehensive understanding of cloud computing concepts and AWS services.",
-      link: "#"
+      link: ""
     }
   ];
 
